@@ -1,0 +1,29 @@
+{
+  "id": "your.plugin",
+  "name": "Plugin Template",
+  "description": "REPLACE ME: describe what your extension does.",
+  "author": "Your Name",
+  "version": "1.0.0",
+  "apiVersion": 1,
+  "avaloniaMajorVersion": 11,
+  "entryAssembly": "PluginTemplate.dll",
+  "entryType": "PluginTemplate.PluginTemplateExtension",
+  "startWithLauncher": true,
+  "defaultLocale": "en-US",
+  "commands": [
+    {
+      "id": "your.plugin.open",
+      "title": "Plugin Template",
+      "titleKey": "title"
+    }
+  ],
+  "settings": [
+    {
+      "key": "greeting",
+      "title": "Greeting",
+      "titleKey": "greeting",
+      "kind": "String",
+      "defaultValue": "Hello from my plugin!"
+    }
+  ]
+}

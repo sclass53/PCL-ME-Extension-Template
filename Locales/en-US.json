@@ -1,0 +1,8 @@
+{
+  "title": "Plugin Template",
+  "greeting": "Greeting",
+  "description": "This is a template. Replace the page with your own UI and behaviour.",
+  "notify": "Show notification",
+  "message": "This notification came from the template plugin.",
+  "no_instance": "No instance is selected."
+}

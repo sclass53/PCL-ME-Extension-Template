@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    PCL-ME plugin template.
+    Rename this project/assembly (and the namespace in the .cs file) if you like.
+    If you rename the assembly, update entryAssembly in extension.json to match.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Version>1.0.0</Version>
+    <AssemblyName>PluginTemplate</AssemblyName>
+    <RootNamespace>PluginTemplate</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+      The template references the public extension SDK from a sibling PCL-ME checkout.
+      Replace this path if your PCL-ME checkout is elsewhere.
+    -->
+    <ProjectReference Include="..\PCL-ME\src\PCL.Extensions.Avalonia\PCL.Extensions.Avalonia.csproj" />
+
+    <!-- extension.json and locales are copied next to the built assembly. -->
+    <Content Include="extension.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Locales\*.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
